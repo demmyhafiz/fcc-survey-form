@@ -21,11 +21,28 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  <form>
-    <label><input type="text/submit/hidden/button/etc" name="" value=""></label>
-    <input type="checkbox" name="">
-    <input type="email"></button>" name="">
+  <header id="" class="head-title">
+    <h1 id="title">Feeling Survey Form</h1>
+    <p id="description">Do you need someone to confide in?</p>
+    
+  </header><!-- /header -->
+  
+  <div class="wraper">
+  <form id="survey-form">
+    <div class="content-wraper">
+    <label for="name" id="name-label">Name</label>
+      <input id="name" type="text" name="fullname" placeholder="Enter Your Name">
+    </div>
+    <div class="content-wraper">
+    <label for="email" id="email-label">Email</label>
+      <input id="email" type="text" name="email" placeholder="Enter Your Email" required>
+    </div>
+      <div class="content-wraper">
+      <label for="number" id="number-label">Age</label>
+      <input id="number" type="text" name="number" min="17" max="99" placeholder="Enter Your Age">
+    </div>
   </form>
+</div>
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
