@@ -30,16 +30,58 @@
   <div class="wraper">
   <form id="survey-form">
     <div class="content-wraper">
-    <label for="name" id="name-label">Name</label>
-      <input id="name" type="text" name="fullname" placeholder="Enter Your Name">
+    <label for="name" id="name-label" class="label-wraper">Name</label>
+      <input id="name" type="text" name="name" placeholder="Enter Your Name" required="">
     </div>
     <div class="content-wraper">
-    <label for="email" id="email-label">Email</label>
-      <input id="email" type="text" name="email" placeholder="Enter Your Email" required>
+    <label for="email" id="email-label" class="label-wraper">Email</label>
+      <input id="email" type="email" name="email" placeholder="Enter Your Email" required>
     </div>
       <div class="content-wraper">
-      <label for="number" id="number-label">Age</label>
-      <input id="number" type="text" name="number" min="17" max="99" placeholder="Enter Your Age">
+      <label for="number" id="number-label" class="label-wraper">Age</label>
+      <input id="number" type="number" name="number" min="17" max="99" placeholder="Enter Your Age" required="">
+    </div>
+    <div class="content-wraper">
+      <label for="dropdown" id="dropdown-label" class="label-wraper">Which option best describes your current feeling?</label>
+      <select id="dropdown" name="dropdown">
+        <option value="">Set your feeling</option>
+        <option value="happy">Happy</option>
+        <option value="love">Love</option>
+        <option value="sad">Sad</option>
+        <option value="angry">Angry</option>
+        <option value="confused">Confused</option>
+      </select>
+    </div>
+    <div class="content-wraper radio-wraper">
+      <label class="checkbox-label label-wraper">What feeling do you want to avoid?</label>
+      <label class="label-wraper">
+      <input type="checkbox" class="rd" name="feeling" value="thankful">Thankful</label>
+      <label class="label-wraper">
+      <input type="checkbox" class="rd" name="feeling" value="affectionate">Affectionate</label>
+      <label class="label-wraper">
+      <input type="checkbox" class="rd" name="feeling" value="anguish">Anguish</label>
+      <label class="label-wraper">
+      <input type="checkbox" class="rd" name="feeling" value="irritated">Irritated</label>
+      <label class="label-wraper">
+      <input type="checkbox" class="rd" name="feeling" value="hesitant">Hesitant</label>
+    </div>
+    <div class="content-wraper">
+      <label class="label-wraper">Would you like to improved your feeling?</label>
+      <label class="label-wraper">
+      <input class="rd" type="radio" name="answer" value="yes">Yes</label>
+      <label class="label-wraper">
+      <input class="rd" type="radio" name="answer" value="maybe">Maybe</label>
+      <label class="label-wraper">
+      <input class="rd" type="radio" name="answer" value="no">No</label>
+      </div>
+    <div class="content-wraper">
+      <label class="label-wraper">Let's see how's your feeling now?</label>
+      <textarea name="comment" placeholder="Pour out all your feelings here.."></textarea>
+    </div>
+    <div class="content-wraper">
+      <button type="submit" value="Submit" id="submit">Submit</button>
+    </div>
+      
     </div>
   </form>
 </div>
@@ -49,6 +91,7 @@
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
 </html>

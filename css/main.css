@@ -20,7 +20,22 @@
   margin-top: 2rem;
 }
 
-label {
+.label-wraper {
   display: flex;
   margin-bottom: 0.5rem;
+}
+
+.checkbox-wraper {
+  display: flex;
+  flex-direction: column;
+}
+
+.rd {
+  margin-right: 0.5rem;
+}
+
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  min-height: 100px;
 }
